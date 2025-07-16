@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="594.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquiler.controller.IngresarSACController">
+   <children>
+      <Label fx:id="inicioSesionLbl" layoutX="239.0" layoutY="22.0" prefHeight="41.0" prefWidth="238.0" text="Inicio de sesion" textFill="#2db23f">
+         <font>
+            <Font name="Calibri Light" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="identificacionLbl" layoutX="125.0" layoutY="114.0" text="Numero de identificacion." textFill="#2db23f" />
+      <TextField fx:id="identificacionTxtField" layoutX="274.0" layoutY="110.0" prefHeight="25.0" prefWidth="268.0" />
+      <TextField fx:id="palabraClaveTxtField" layoutX="274.0" layoutY="176.0" prefHeight="25.0" prefWidth="268.0" />
+      <Label fx:id="palabraClaveLbl" layoutX="125.0" layoutY="180.0" prefHeight="17.0" prefWidth="93.0" text="Palabra clave." textFill="#2db23f" />
+      <Label fx:id="iconoClaveLbl" layoutX="299.0" layoutY="250.0" text="Icono clave" textFill="#2db23f">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="trianguloButton" layoutX="286.0" layoutY="322.0" mnemonicParsing="false" onAction="#trianguloAction" text="▲" />
+      <Button fx:id="cuadradoButton" layoutX="391.0" layoutY="322.0" mnemonicParsing="false" onAction="#cuadradoAction" prefHeight="25.0" prefWidth="27.0" text="∎" />
+      <Button fx:id="circuloButton" layoutX="287.0" layoutY="394.0" mnemonicParsing="false" onAction="#circuloAction" text="●" />
+      <Button fx:id="caritaFelizButton" layoutX="394.0" layoutY="394.0" mnemonicParsing="false" onAction="#caritaFelizAction" text="☻" />
+      <Button fx:id="iniciarSesionButton" layoutX="284.0" layoutY="489.0" mnemonicParsing="false" onAction="#iniciarSesionAction" prefHeight="57.0" prefWidth="148.0" text="Iniciar sesion" />
+      <ImageView fx:id="logoImgView" fitHeight="95.0" fitWidth="110.0" layoutX="601.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/Uniqlog.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="532.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquiler.controller.pagosEnLineaController">
+   <children>
+      <Label fx:id="pagosEnLineaLbl" layoutX="239.0" layoutY="22.0" prefHeight="41.0" prefWidth="238.0" text="Pagos en linea" textFill="#2db23f">
+         <font>
+            <Font name="Calibri Light" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="identificacionLbl" layoutX="125.0" layoutY="114.0" text="Codigo de referencia" textFill="#2db23f" />
+      <TextField fx:id="identificacionTxtField" layoutX="274.0" layoutY="110.0" prefHeight="25.0" prefWidth="268.0" />
+      <ImageView fx:id="logoImgView" fitHeight="95.0" fitWidth="110.0" layoutX="583.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="consultarButton" layoutX="239.0" layoutY="164.0" mnemonicParsing="false" onAction="#mostrarDatosAction" prefHeight="25.0" prefWidth="219.0" text="Consultar" />
+      <Label fx:id="codigoLbl" layoutX="132.0" layoutY="250.0" text="Codigo de documento" />
+      <TextField fx:id="codigoTextField" disable="true" layoutX="283.0" layoutY="246.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label fx:id="valorAPagarLbl" layoutX="132.0" layoutY="309.0" text="Valor a pagar" />
+      <TextField fx:id="valorAPagarTextField" disable="true" layoutX="283.0" layoutY="305.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label fx:id="nombreEstudianteLbl" layoutX="132.0" layoutY="369.0" text="Nombre estudiante" />
+      <TextField fx:id="nombreEstudianteTextField" disable="true" layoutX="284.0" layoutY="365.0" prefHeight="25.0" prefWidth="219.0" />
+      <ImageView fx:id="logimgView" fitHeight="83.0" fitWidth="89.0" layoutX="604.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/Uniqlog.png" />
+         </image></ImageView>
+      <Button fx:id="pagarButton" layoutX="332.0" layoutY="503.0" mnemonicParsing="false" onAction="#pagarOnAction" prefHeight="25.0" prefWidth="67.0" text="Pagar" />
+      <ComboBox fx:id="metodoPagoComboBox" layoutX="283.0" layoutY="429.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label fx:id="metodoPagoLbl" layoutX="132.0" layoutY="433.0" text="Metodo de pago" />
+   </children>
+</AnchorPane>

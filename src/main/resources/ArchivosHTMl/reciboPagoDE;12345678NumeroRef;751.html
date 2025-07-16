@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recibo de Pago - Universidad del Quindío</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f8f8f8;
+    }
+    .recibo {
+      background: white;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      border: 1px solid #ccc;
+    }
+    .encabezado {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .encabezado img {
+      width: 80px;
+    }
+    .titulo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .datos, .detalle {
+      margin-bottom: 20px;
+    }
+    .datos td, .detalle td {
+      padding: 5px 10px;
+    }
+    .detalle th {
+      background-color: #eee;
+      padding: 10px;
+    }
+    .valor {
+      font-weight: bold;
+      color: green;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      text-align: center;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="recibo">
+    <div class="encabezado">
+      <img src="src\main\resources\Imagenes\Uniqlog.png" alt="Escudo">
+      <div class="titulo">Universidad del Quindío</div>
+      <div>Recibo de Pago Estudiantil</div>
+    </div>
+
+    <table class="datos">
+      <tr>
+        <td><strong>Nombre del estudiante:</strong></td>
+        <td>Nicolas</td>
+      </tr>
+      <tr>
+        <td><strong>ID Estudiante:</strong></td>
+        <td>12345678</td>
+      </tr>
+      <tr>
+        <td><strong>Programa:</strong></td>
+        <td>Ingeniería de sistemas</td>
+      </tr>
+      <tr>
+        <td><strong>Fecha de Expedición:</strong></td>
+        <td>2025-05-05</td>
+      </tr>
+      <tr>
+        <td><strong>Fecha de Vencimiento:</strong></td>
+        <td>2025-06-07</td>
+      </tr>
+    </table>
+
+    <table class="detalle" width="100%" border="1" cellspacing="0">
+      <tr>
+        <th>Referencia</th>
+        <th>Materia</th>
+        <th>Valor a Pagar</th>
+        <th>Estado</th>
+      </tr>
+      <tr>
+        <td>751</td>
+        <td>Estructura de datos</td>
+        <td class="valor">300.0</td>
+        <td>GENERADO</td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      Este documento es válido solo para efectos informativos. Para pagar, diríjase al banco autorizado con este recibo impreso o 	acceda a la opcion de pagos en linea que ofrece la plataforma SAC.<br>
+      Universidad del Quindío - Armenia, Quindío, Colombia
+    </div>
+  </div>
+
+</body>
+
+<a href="recibo_pago.html" download="Recibo_UQ.html">
+  <button>Descargar Recibo HTML</button>
+</a>
+
+</html>
