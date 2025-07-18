@@ -1,5 +1,6 @@
 package co.edu.uniquindio.alquiler.model;
 
+import co.edu.uniquindio.alquiler.Listas.BicolaSimple;
 import co.edu.uniquindio.alquiler.Listas.ListaSimple;
 import lombok.*;
 

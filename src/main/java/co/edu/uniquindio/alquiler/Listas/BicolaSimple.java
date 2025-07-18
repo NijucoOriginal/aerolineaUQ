@@ -7,7 +7,7 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class BicolaSimple {
+public class BicolaSimple<T> {
 
 
 }

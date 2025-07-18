@@ -1,4 +1,7 @@
 package co.edu.uniquindio.alquiler.model;
 
-public class TipoVuelo {
+public enum TipoVuelo {
+
+    IDA,
+    IDAVUELTA
 }

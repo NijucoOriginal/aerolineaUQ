@@ -1,4 +1,7 @@
 package co.edu.uniquindio.alquiler.model;
 
-public class TipoEquipaje {
+public enum TipoEquipaje {
+
+    MANO,
+    CARGA
 }

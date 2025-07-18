@@ -1,4 +1,12 @@
 package co.edu.uniquindio.alquiler.model;
 
-public class Conductor {
+
+import lombok.*;
+
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class Conductor extends Persona {
 }

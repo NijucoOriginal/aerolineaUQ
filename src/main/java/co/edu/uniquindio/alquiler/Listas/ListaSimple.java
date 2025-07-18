@@ -27,14 +27,44 @@ public class ListaSimple<T> {
         cantidad++;
     }
 
-    public void agregarFinal(Nodo<T> nodoFinal) {
+    public void agregarFinal(Nodo<T> nodoFinal,int longitud,Nodo<T> nodoMovimiento) {
         if(estaVacia())
         {
             this.primero=nodoFinal;
         }
         else
         {
-            
+            if(longitud==0)
+            {
+                nodoMovimiento.setSiguiente(nodoFinal);
+            }
+            else
+            {
+                longitud--;
+                agregarFinal(nodoFinal,longitud,nodoMovimiento.getSiguiente());
+            }
+        }
+    }
+
+    public void eliminarAlInicio(int longitud,Nodo<T> siguiente) {
+        Nodo<T> enviar;
+        if(longitud>0)
+        {
+            if(longitud==cantidad)
+            {
+                primero=primero.getSiguiente();
+                enviar=primero;
+            }
+            else
+            {
+                siguiente=siguiente.getSiguiente();
+                enviar=siguiente;
+            }
+            eliminarAlInicio(longitud-1,enviar);
+        }
+        else
+        {
+            cantidad--;
         }
     }
 
