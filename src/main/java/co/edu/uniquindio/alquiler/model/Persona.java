@@ -17,6 +17,5 @@ public abstract class Persona {
     private String telefonoEmergencia;
     private int edad;
     private String tipoSangre;
-    private ListaSimple<String> enfermedades;
     private String nacionalidad;
 }

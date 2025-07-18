@@ -15,4 +15,6 @@ public class Aerolinea {
     private ListaSimple<Conductor> conductores;
     private ListaSimple<Tripulante> tripulantes;
     private ListaSimple<Pasajero> pasajeros;
+
+
 }
