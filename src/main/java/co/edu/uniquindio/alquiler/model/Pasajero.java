@@ -17,4 +17,5 @@ public class Pasajero extends Persona {
     private boolean registrado;
     private ListaSimple<Tiquete> tiquetes;
     private int numeroTarjetaCredito;
+    private String conrasenia;
 }

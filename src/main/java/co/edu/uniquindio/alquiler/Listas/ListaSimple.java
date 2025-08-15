@@ -6,25 +6,26 @@ import lombok.*;
 @Setter
 public class ListaSimple<T> {
 
-    private int cantidad;
+    private int tamanio;
     private Nodo<T> primero;
 
     public ListaSimple() {
-        cantidad=0;
+        tamanio=0;
         primero=null;
     }
 
-    public void agregarInicio(Nodo<T> primero) {
+    public void agregarInicio(T primero) {
+        Nodo<T> agregar=new Nodo<>(primero);
         if(estaVacia())
         {
-            this.primero=primero;
+            this.primero=agregar;
         }
         else
         {
-            primero.setSiguiente(this.primero);
-            this.primero=primero;
+            agregar.setSiguiente(this.primero);
+            this.primero=agregar;
         }
-        cantidad++;
+        tamanio++;
     }
 
     public void agregarFinal(Nodo<T> nodoFinal,int longitud,Nodo<T> nodoMovimiento) {
@@ -50,7 +51,7 @@ public class ListaSimple<T> {
         Nodo<T> enviar;
         if(longitud>0)
         {
-            if(longitud==cantidad)
+            if(longitud==tamanio)
             {
                 primero=primero.getSiguiente();
                 enviar=primero;
@@ -64,8 +65,16 @@ public class ListaSimple<T> {
         }
         else
         {
-            cantidad--;
+            tamanio--;
         }
+    }
+
+    public T buscarValorIndice(Nodo<T> buscar,int indice) {
+        if(indice==0)
+        {
+            return buscar.getObjeto();
+        }
+        return buscarValorIndice(buscar.getSiguiente(),indice-1);
     }
 
     public boolean estaVacia() {

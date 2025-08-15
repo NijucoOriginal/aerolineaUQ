@@ -9,6 +9,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Administrador extends Persona{
-
+    private String contrasenia;
 
 }

@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="co.edu.uniquindio.alquiler.controller.InicioSesionController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="191.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquiler.controller.InicioSesionController">
+   <children>
+      <Label fx:id="tituloLbl" layoutX="157.0" layoutY="14.0" text="Inicio de sesion" />
+      <Label fx:id="idLbl" layoutX="29.0" layoutY="58.0" prefHeight="17.0" prefWidth="136.0" text="Documento de identidad" />
+      <Label fx:id="contraLbl" layoutX="29.0" layoutY="96.0" text="Contraseña" />
+      <TextField fx:id="idTextField" layoutX="172.0" layoutY="54.0" />
+      <Button fx:id="ingresarButton" layoutX="155.0" layoutY="141.0" mnemonicParsing="false" onAction="#ingresarOnAction" text="Ingresar" />
+      <PasswordField fx:id="contraPassField" layoutX="172.0" layoutY="92.0" />
+   </children>
 </AnchorPane>
